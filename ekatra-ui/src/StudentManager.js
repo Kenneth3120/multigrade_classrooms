@@ -144,11 +144,13 @@ const StudentManager = () => {
         return;
       }
 
-      const apiKey = process.env.REACT_APP_GOOGLE_SHEETS_API_KEY;
-      if (!apiKey) {
-        alert('Google Sheets API key is not configured. Please contact the administrator to set up the API key.');
-        return;
-      }
+      // const apiKey = process.env.REACT_APP_GOOGLE_SHEETS_API_KEY;
+      // if (!apiKey) {
+      //   alert('Google Sheets API key is not configured. Please contact the administrator to set up the API key.');
+      //   return;
+      // }
+
+       const apiKey = "AIzaSyAOyFQ4czz4-x8f_CUfziJiQX9EfYLhB4w";
       
       console.log('Using API Key:', apiKey.substring(0, 20) + '...');
       const range = 'Sheet1!A:H'; // Adjust range as needed
